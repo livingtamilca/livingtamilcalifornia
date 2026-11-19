@@ -1,1 +1,201 @@
-<h1>Coming Soon</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contemporary Tamil Literature</title>
+  <meta name="description" content="A guide to contemporary Tamil literature and the writers shaping it.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbf7f0;
+      --text: #2a2420;
+      --muted: #6b5f55;
+      --accent: #a3341b;
+      --card: #ffffff;
+      --border: #e6dccd;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1b1714;
+        --text: #efe7dc;
+        --muted: #a89c90;
+        --accent: #e8825f;
+        --card: #26211d;
+        --border: #3a322b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Lora", "Noto Sans Tamil", Georgia, serif;
+      line-height: 1.65;
+    }
+    a { color: var(--accent); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+    header { border-bottom: 1px solid var(--border); }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; padding: 16px 0; }
+    nav .brand { font-weight: 600; margin-right: auto; color: var(--text); text-decoration: none; }
+    nav a { text-decoration: none; color: var(--muted); }
+    nav a:hover { color: var(--accent); }
+
+    .hero { padding: 72px 0 56px; }
+    .hero .tamil {
+      font-family: "Noto Serif Tamil", serif;
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      color: var(--accent);
+      margin: 0 0 8px;
+    }
+    .hero h1 { font-size: clamp(1.4rem, 3.5vw, 2rem); margin: 0 0 16px; font-weight: 600; }
+    .hero p { max-width: 60ch; color: var(--muted); font-size: 1.1rem; margin: 0; }
+
+    section { padding: 40px 0; border-top: 1px solid var(--border); }
+    h2 { margin: 0 0 8px; font-size: 1.5rem; }
+    .lede { color: var(--muted); margin: 0 0 24px; max-width: 65ch; }
+
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+    .avatar { width: 72px; height: 72px; display: block; margin-bottom: 12px; }
+    .card h3 { margin: 0; font-size: 1.1rem; }
+    .card .ta { font-family: "Noto Sans Tamil", sans-serif; color: var(--muted); font-size: 0.95rem; margin: 0 0 8px; }
+    .card p { margin: 0 0 8px; font-size: 0.95rem; }
+    .card .works { color: var(--muted); font-style: italic; font-size: 0.9rem; }
+
+    ul.themes { padding-left: 20px; max-width: 65ch; }
+    ul.themes li { margin-bottom: 8px; }
+
+    footer { border-top: 1px solid var(--border); padding: 24px 0 40px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="#top">Tamil Literature Today</a>
+        <a href="#writers">Writers</a>
+        <a href="#themes">Themes</a>
+        <a href="#reading">Reading list</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap">
+      <div class="hero">
+        <p class="tamil" lang="ta">தற்கால தமிழ் இலக்கியம்</p>
+        <h1>Contemporary Tamil literature and the writers behind it</h1>
+        <p>Tamil has one of the oldest continuous literary traditions in the world. This site is a starting point for exploring the novelists, poets and short-story writers who carry it forward today.</p>
+      </div>
+
+      <section id="writers">
+        <h2>Writers to know</h2>
+        <p class="lede">Six voices, from the Tamil renaissance to the present day. Each entry is a doorway, not a complete biography. Portraits are placeholder illustrations.</p>
+        <div class="grid">
+          <article class="card">
+            <svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Illustrated portrait placeholder for Subramania Bharati" style="--c:#b5532f">
+              <rect width="100" height="100" rx="50" fill="var(--c)"/>
+              <circle cx="50" cy="38" r="17" fill="#fff" opacity=".9"/>
+              <path d="M16 90c3-22 19-32 34-32s31 10 34 32a50 50 0 0 1-68 0z" fill="#fff" opacity=".9"/>
+              <text x="50" y="45" text-anchor="middle" font-size="20" font-family="Noto Sans Tamil, sans-serif" fill="var(--c)" font-weight="600">பா</text>
+            </svg>
+            <h3>Subramania Bharati</h3>
+            <p class="ta" lang="ta">சுப்பிரமணிய பாரதி · 1882–1921</p>
+            <p>Revolutionary poet of the Tamil renaissance, who wrote on freedom, women's equality and a modern Tamil voice.</p>
+            <p class="works">Kuyil Pattu, Kannan Pattu, Panchali Sapatham</p>
+          </article>
+          <article class="card">
+            <svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Illustrated portrait placeholder for Puthumaipithan" style="--c:#3f6f8f">
+              <rect width="100" height="100" rx="50" fill="var(--c)"/>
+              <circle cx="50" cy="38" r="17" fill="#fff" opacity=".9"/>
+              <path d="M16 90c3-22 19-32 34-32s31 10 34 32a50 50 0 0 1-68 0z" fill="#fff" opacity=".9"/>
+              <text x="50" y="45" text-anchor="middle" font-size="20" font-family="Noto Sans Tamil, sans-serif" fill="var(--c)" font-weight="600">பு</text>
+            </svg>
+            <h3>Puthumaipithan</h3>
+            <p class="ta" lang="ta">புதுமைப்பித்தன் · 1906–1948</p>
+            <p>Pioneer of the modern Tamil short story, famed for his sharp satire and restless experiments with form.</p>
+            <p class="works">Ponnagaram, Sabavimosanam</p>
+          </article>
+          <article class="card">
+            <svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Illustrated portrait placeholder for Ka. Na. Subramanyam" style="--c:#6b7d3a">
+              <rect width="100" height="100" rx="50" fill="var(--c)"/>
+              <circle cx="50" cy="38" r="17" fill="#fff" opacity=".9"/>
+              <path d="M16 90c3-22 19-32 34-32s31 10 34 32a50 50 0 0 1-68 0z" fill="#fff" opacity=".9"/>
+              <text x="50" y="45" text-anchor="middle" font-size="20" font-family="Noto Sans Tamil, sans-serif" fill="var(--c)" font-weight="600">க</text>
+            </svg>
+            <h3>Ka. Na. Subramanyam</h3>
+            <p class="ta" lang="ta">க. நா. சுப்ரமண்யம் · 1912–1988</p>
+            <p>Critic, poet and novelist who championed modernism and shaped how Tamil literature is judged.</p>
+            <p class="works">Poithevu, Oru Naal</p>
+          </article>
+          <article class="card">
+            <svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Illustrated portrait placeholder for Sundara Ramaswamy" style="--c:#8a4f7d">
+              <rect width="100" height="100" rx="50" fill="var(--c)"/>
+              <circle cx="50" cy="38" r="17" fill="#fff" opacity=".9"/>
+              <path d="M16 90c3-22 19-32 34-32s31 10 34 32a50 50 0 0 1-68 0z" fill="#fff" opacity=".9"/>
+              <text x="50" y="45" text-anchor="middle" font-size="20" font-family="Noto Sans Tamil, sans-serif" fill="var(--c)" font-weight="600">சு</text>
+            </svg>
+            <h3>Sundara Ramaswamy</h3>
+            <p class="ta" lang="ta">சுந்தர ராமசாமி · 1931–2005</p>
+            <p>Novelist, poet and founder of the journal Kalachuvadu, admired for his precise, ironic prose.</p>
+            <p class="works">Oru Puliyamarathin Kathai, J.J. Silakurippugal</p>
+          </article>
+          <article class="card">
+            <svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Illustrated portrait placeholder for Asokamitran" style="--c:#a8801f">
+              <rect width="100" height="100" rx="50" fill="var(--c)"/>
+              <circle cx="50" cy="38" r="17" fill="#fff" opacity=".9"/>
+              <path d="M16 90c3-22 19-32 34-32s31 10 34 32a50 50 0 0 1-68 0z" fill="#fff" opacity=".9"/>
+              <text x="50" y="45" text-anchor="middle" font-size="20" font-family="Noto Sans Tamil, sans-serif" fill="var(--c)" font-weight="600">அ</text>
+            </svg>
+            <h3>Asokamitran</h3>
+            <p class="ta" lang="ta">அசோகமித்திரன் · 1931–2017</p>
+            <p>Chronicler of ordinary lives in Chennai and Secunderabad, writing with quiet humour and restraint.</p>
+            <p class="works">Karaindha Nizhalgal, Thaneer</p>
+          </article>
+          <article class="card">
+            <svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Illustrated portrait placeholder for Jeyamohan" style="--c:#2f7f74">
+              <rect width="100" height="100" rx="50" fill="var(--c)"/>
+              <circle cx="50" cy="38" r="17" fill="#fff" opacity=".9"/>
+              <path d="M16 90c3-22 19-32 34-32s31 10 34 32a50 50 0 0 1-68 0z" fill="#fff" opacity=".9"/>
+              <text x="50" y="45" text-anchor="middle" font-size="20" font-family="Noto Sans Tamil, sans-serif" fill="var(--c)" font-weight="600">ஜெ</text>
+            </svg>
+            <h3>Jeyamohan</h3>
+            <p class="ta" lang="ta">ஜெயமோகன் · b. 1962</p>
+            <p>Prolific novelist, short-story writer and essayist working across epic, realist and philosophical modes.</p>
+            <p class="works">Vishnupuram, Kotravai</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="themes">
+        <h2>Recurring themes</h2>
+        <ul class="themes">
+          <li><strong>Caste and social justice</strong> – Dalit literature has reshaped what Tamil fiction looks like and who writes it.</li>
+          <li><strong>Gender and identity</strong> – feminist and queer voices in poetry and prose.</li>
+          <li><strong>Land and language</strong> – regional dialects, agrarian life and the pull of the city.</li>
+          <li><strong>Diaspora</strong> – Tamil writing from Sri Lanka, Singapore, Malaysia and beyond.</li>
+        </ul>
+      </section>
+
+      <section id="reading">
+        <h2>Where to start reading</h2>
+        <p class="lede">Many of these writers are available in English translation. Good first steps: a Puthumaipithan short-story collection, Asokamitran's Water, or Sundara Ramaswamy's Story of a Tamarind Tree.</p>
+      </section>
+
+      <section id="about">
+        <h2>About this site</h2>
+        <p class="lede">This is a first draft. Planned next: writer profiles, an events and book-fair calendar, a translators' page, and a timeline of the modern Tamil literary movement.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Tamil Literature Today. Made with love for the written word.</div>
+  </footer>
+</body>
+</html>
