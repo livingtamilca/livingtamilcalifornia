@@ -1,201 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contemporary Tamil Literature</title>
-  <meta name="description" content="A guide to contemporary Tamil literature and the writers shaping it.">
+  <title>Home · Living Tamil California</title>
+  <meta name="description" content="Living Tamil California brings Tamil literature and culture to life in the United States.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&family=Noto+Serif+Tamil:wght@600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #fbf7f0;
-      --text: #2a2420;
-      --muted: #6b5f55;
-      --accent: #a3341b;
-      --card: #ffffff;
-      --border: #e6dccd;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1b1714;
-        --text: #efe7dc;
-        --muted: #a89c90;
-        --accent: #e8825f;
-        --card: #26211d;
-        --border: #3a322b;
-      }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: "Lora", "Noto Sans Tamil", Georgia, serif;
-      line-height: 1.65;
-    }
-    a { color: var(--accent); }
-    .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
-
-    header { border-bottom: 1px solid var(--border); }
-    nav { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; padding: 16px 0; }
-    nav .brand { font-weight: 600; margin-right: auto; color: var(--text); text-decoration: none; }
-    nav a { text-decoration: none; color: var(--muted); }
-    nav a:hover { color: var(--accent); }
-
-    .hero { padding: 72px 0 56px; }
-    .hero .tamil {
-      font-family: "Noto Serif Tamil", serif;
-      font-size: clamp(2rem, 6vw, 3.25rem);
-      color: var(--accent);
-      margin: 0 0 8px;
-    }
-    .hero h1 { font-size: clamp(1.4rem, 3.5vw, 2rem); margin: 0 0 16px; font-weight: 600; }
-    .hero p { max-width: 60ch; color: var(--muted); font-size: 1.1rem; margin: 0; }
-
-    section { padding: 40px 0; border-top: 1px solid var(--border); }
-    h2 { margin: 0 0 8px; font-size: 1.5rem; }
-    .lede { color: var(--muted); margin: 0 0 24px; max-width: 65ch; }
-
-    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
-    .avatar { width: 72px; height: 72px; display: block; margin-bottom: 12px; }
-    .card h3 { margin: 0; font-size: 1.1rem; }
-    .card .ta { font-family: "Noto Sans Tamil", sans-serif; color: var(--muted); font-size: 0.95rem; margin: 0 0 8px; }
-    .card p { margin: 0 0 8px; font-size: 0.95rem; }
-    .card .works { color: var(--muted); font-style: italic; font-size: 0.9rem; }
-
-    ul.themes { padding-left: 20px; max-width: 65ch; }
-    ul.themes li { margin-bottom: 8px; }
-
-    footer { border-top: 1px solid var(--border); padding: 24px 0 40px; color: var(--muted); font-size: 0.9rem; }
-  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <nav>
-        <a class="brand" href="#top">Tamil Literature Today</a>
-        <a href="#writers">Writers</a>
-        <a href="#themes">Themes</a>
-        <a href="#reading">Reading list</a>
-        <a href="#about">About</a>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">
+        <span class="brand-ta" lang="ta">வாழும் தமிழ்</span>
+        <span class="brand-en">Living Tamil California</span>
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="readings.html">Reading Archive</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
+      <a class="btn btn-donate" href="donate.html">Donate</a>
     </div>
   </header>
 
-  <main id="top">
-    <div class="wrap">
-      <div class="hero">
-        <p class="tamil" lang="ta">தற்கால தமிழ் இலக்கியம்</p>
-        <h1>Contemporary Tamil literature and the writers behind it</h1>
-        <p>Tamil has one of the oldest continuous literary traditions in the world. This site is a starting point for exploring the novelists, poets and short-story writers who carry it forward today.</p>
-      </div>
-
-      <section id="writers">
-        <h2>Writers to know</h2>
-        <p class="lede">Six voices, from the Tamil renaissance to the present day. Each entry is a doorway, not a complete biography. Portraits are placeholder illustrations.</p>
-        <div class="grid">
-          <article class="card">
-            <svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Illustrated portrait placeholder for Subramania Bharati" style="--c:#b5532f">
-              <rect width="100" height="100" rx="50" fill="var(--c)"/>
-              <circle cx="50" cy="38" r="17" fill="#fff" opacity=".9"/>
-              <path d="M16 90c3-22 19-32 34-32s31 10 34 32a50 50 0 0 1-68 0z" fill="#fff" opacity=".9"/>
-              <text x="50" y="45" text-anchor="middle" font-size="20" font-family="Noto Sans Tamil, sans-serif" fill="var(--c)" font-weight="600">பா</text>
-            </svg>
-            <h3>Subramania Bharati</h3>
-            <p class="ta" lang="ta">சுப்பிரமணிய பாரதி · 1882–1921</p>
-            <p lang="ta">தமிழ் மறுமலர்ச்சியின் புரட்சிக் கவிஞர்; விடுதலை, பெண் சமத்துவம், புதிய தமிழ்க் குரல் ஆகியவற்றைப் பாடியவர்.</p>
-            <p class="works">Kuyil Pattu, Kannan Pattu, Panchali Sapatham</p>
-          </article>
-          <article class="card">
-            <svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Illustrated portrait placeholder for Puthumaipithan" style="--c:#3f6f8f">
-              <rect width="100" height="100" rx="50" fill="var(--c)"/>
-              <circle cx="50" cy="38" r="17" fill="#fff" opacity=".9"/>
-              <path d="M16 90c3-22 19-32 34-32s31 10 34 32a50 50 0 0 1-68 0z" fill="#fff" opacity=".9"/>
-              <text x="50" y="45" text-anchor="middle" font-size="20" font-family="Noto Sans Tamil, sans-serif" fill="var(--c)" font-weight="600">பு</text>
-            </svg>
-            <h3>Puthumaipithan</h3>
-            <p class="ta" lang="ta">புதுமைப்பித்தன் · 1906–1948</p>
-            <p lang="ta">நவீனத் தமிழ்ச் சிறுகதையின் முன்னோடி; கூர்மையான நையாண்டிக்கும் வடிவப் பரிசோதனைகளுக்கும் பெயர் பெற்றவர்.</p>
-            <p class="works">Ponnagaram, Sabavimosanam</p>
-          </article>
-          <article class="card">
-            <svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Illustrated portrait placeholder for Ka. Na. Subramanyam" style="--c:#6b7d3a">
-              <rect width="100" height="100" rx="50" fill="var(--c)"/>
-              <circle cx="50" cy="38" r="17" fill="#fff" opacity=".9"/>
-              <path d="M16 90c3-22 19-32 34-32s31 10 34 32a50 50 0 0 1-68 0z" fill="#fff" opacity=".9"/>
-              <text x="50" y="45" text-anchor="middle" font-size="20" font-family="Noto Sans Tamil, sans-serif" fill="var(--c)" font-weight="600">க</text>
-            </svg>
-            <h3>Ka. Na. Subramanyam</h3>
-            <p class="ta" lang="ta">க. நா. சுப்ரமண்யம் · 1912–1988</p>
-            <p lang="ta">விமர்சகர், கவிஞர், நாவலாசிரியர்; நவீனத்துவத்தை முன்னெடுத்து, தமிழ் இலக்கியம் மதிப்பிடப்படும் விதத்தை வடிவமைத்தவர்.</p>
-            <p class="works">Poithevu, Oru Naal</p>
-          </article>
-          <article class="card">
-            <svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Illustrated portrait placeholder for Sundara Ramaswamy" style="--c:#8a4f7d">
-              <rect width="100" height="100" rx="50" fill="var(--c)"/>
-              <circle cx="50" cy="38" r="17" fill="#fff" opacity=".9"/>
-              <path d="M16 90c3-22 19-32 34-32s31 10 34 32a50 50 0 0 1-68 0z" fill="#fff" opacity=".9"/>
-              <text x="50" y="45" text-anchor="middle" font-size="20" font-family="Noto Sans Tamil, sans-serif" fill="var(--c)" font-weight="600">சு</text>
-            </svg>
-            <h3>Sundara Ramaswamy</h3>
-            <p class="ta" lang="ta">சுந்தர ராமசாமி · 1931–2005</p>
-            <p lang="ta">நாவலாசிரியர், கவிஞர், காலச்சுவடு இதழின் நிறுவனர்; துல்லியமான, எள்ளல் கலந்த உரைநடைக்காகப் போற்றப்படுபவர்.</p>
-            <p class="works">Oru Puliyamarathin Kathai, J.J. Silakurippugal</p>
-          </article>
-          <article class="card">
-            <svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Illustrated portrait placeholder for Asokamitran" style="--c:#a8801f">
-              <rect width="100" height="100" rx="50" fill="var(--c)"/>
-              <circle cx="50" cy="38" r="17" fill="#fff" opacity=".9"/>
-              <path d="M16 90c3-22 19-32 34-32s31 10 34 32a50 50 0 0 1-68 0z" fill="#fff" opacity=".9"/>
-              <text x="50" y="45" text-anchor="middle" font-size="20" font-family="Noto Sans Tamil, sans-serif" fill="var(--c)" font-weight="600">அ</text>
-            </svg>
-            <h3>Asokamitran</h3>
-            <p class="ta" lang="ta">அசோகமித்திரன் · 1931–2017</p>
-            <p lang="ta">சென்னை, செகந்திராபாத் நகரங்களின் சாதாரண மனிதர்களின் வாழ்க்கையை அமைதியான நகைச்சுவையுடனும் நிதானத்துடனும் பதிவு செய்தவர்.</p>
-            <p class="works">Karaindha Nizhalgal, Thaneer</p>
-          </article>
-          <article class="card">
-            <svg class="avatar" viewBox="0 0 100 100" role="img" aria-label="Illustrated portrait placeholder for Jeyamohan" style="--c:#2f7f74">
-              <rect width="100" height="100" rx="50" fill="var(--c)"/>
-              <circle cx="50" cy="38" r="17" fill="#fff" opacity=".9"/>
-              <path d="M16 90c3-22 19-32 34-32s31 10 34 32a50 50 0 0 1-68 0z" fill="#fff" opacity=".9"/>
-              <text x="50" y="45" text-anchor="middle" font-size="20" font-family="Noto Sans Tamil, sans-serif" fill="var(--c)" font-weight="600">ஜெ</text>
-            </svg>
-            <h3>Jeyamohan</h3>
-            <p class="ta" lang="ta">ஜெயமோகன் · b. 1962</p>
-            <p lang="ta">காவியம், யதார்த்தம், தத்துவம் எனப் பல தளங்களில் எழுதும் மிகுந்த படைப்பூக்கம் கொண்ட நாவலாசிரியர், சிறுகதையாளர், கட்டுரையாளர்.</p>
-            <p class="works">Vishnupuram, Kotravai</p>
-          </article>
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="tamil-name" lang="ta">வாழும் தமிழ் · கலிபோர்னியா</p>
+          <h1>Living Tamil California</h1>
+          <p class="lede">Bringing Tamil literature and culture to life in the United States, through authors, translations, talks, and reading and writing programs open to everyone.</p>
+          <div class="actions">
+            <a class="btn" href="join.html">Join us</a>
+            <a class="btn btn-ghost" href="donate.html">Support our work</a>
+          </div>
+          <p class="status">501(c)(3) status pending · Hayward, California</p>
         </div>
-      </section>
+        <div class="collage" aria-label="Tamil writers">
+          <figure class="c1"><img src="images/bharathi-chellamma.jpg" alt="Subramania Bharathi with his wife Chellamma"></figure>
+          <figure class="c2"><img src="images/puthumaipithan.jpg" alt="Puthumaipithan"></figure>
+          <figure class="c3"><img src="images/jeyakanthan.jpg" alt="Jeyakanthan"></figure>
+          <figure class="c4"><img src="images/writer-portrait.jpg" alt="Tamil writer"></figure>
+          <figure class="c5"><img src="images/jeyamohan.jpg" alt="Jeyamohan"></figure>
+          <figure class="c6"><img src="images/writer-beach.jpg" alt="Sundara Ramaswamy"></figure>
+        </div>
+      </div>
+    </section>
 
-      <section id="themes">
-        <h2>Recurring themes</h2>
-        <ul class="themes">
-          <li><strong>Caste and social justice</strong> – Dalit literature has reshaped what Tamil fiction looks like and who writes it.</li>
-          <li><strong>Gender and identity</strong> – feminist and queer voices in poetry and prose.</li>
-          <li><strong>Land and language</strong> – regional dialects, agrarian life and the pull of the city.</li>
-          <li><strong>Diaspora</strong> – Tamil writing from Sri Lanka, Singapore, Malaysia and beyond.</li>
-        </ul>
-      </section>
-
-      <section id="reading">
-        <h2>Where to start reading</h2>
-        <p class="lede">Many of these writers are available in English translation. Good first steps: a Puthumaipithan short-story collection, Asokamitran's Water, or Sundara Ramaswamy's Story of a Tamarind Tree.</p>
-      </section>
-
-      <section id="about">
-        <h2>About this site</h2>
-        <p class="lede">This is a first draft. Planned next: writer profiles, an events and book-fair calendar, a translators' page, and a timeline of the modern Tamil literary movement.</p>
-      </section>
+    <section class="voices" aria-label="Voices of Tamil literature">
+  <div class="wrap">
+    <p class="label">குரல்கள் · Voices of Tamil literature</p>
+    <div class="q-stage">
+      <span class="q-mark" aria-hidden="true">“</span>
+      <figure class="q-slide is-active" aria-hidden="false">
+        <img class="q-portrait" src="images/bharathi-chellamma.jpg" alt="Subramania Bharathi" style="object-position:center 15%">
+        <blockquote>
+          <p class="q-ta" lang="ta">பிறநாட்டு நல்லறிஞர் சாத்திரங்கள்<br>தமிழ்மொழியிற் பெயர்த்தல் வேண்டும்;<br>இறவாத புகழுடைய புதுநூல்கள்<br>தமிழ்மொழியில் இயற்றல் வேண்டும்.</p>
+          <p class="q-en">The works of great scholars from other lands must be translated into Tamil; new books of undying fame must be written in Tamil.</p>
+        </blockquote>
+        <figcaption><span class="q-name-ta" lang="ta">மகாகவி பாரதியார்</span><span class="q-name-en">Subramania Bharathi</span></figcaption>
+      </figure>
+      <figure class="q-slide" aria-hidden="true">
+        <img class="q-portrait" src="images/puthumaipithan.jpg" alt="Puthumaipithan" style="object-position:center 25%">
+        <blockquote>
+          <p class="q-ta" lang="ta">வாழ்க்கையின் அர்த்தத்தைச் சொல்லுவது தத்துவம்;<br>வாழ்க்கையைச் சொல்வது, அதன் ரசனையைச் சொல்வது இலக்கியம்.</p>
+          <p class="q-en">Philosophy tells the meaning of life; literature tells life itself, and its savour.</p>
+        </blockquote>
+        <figcaption><span class="q-name-ta" lang="ta">புதுமைப்பித்தன்</span><span class="q-name-en">Puthumaipithan</span></figcaption>
+      </figure>
+      <figure class="q-slide" aria-hidden="true">
+        <img class="q-portrait" src="images/jeyakanthan.jpg" alt="Jeyakanthan" style="object-position:center 20%">
+        <blockquote>
+          <p class="q-ta" lang="ta">எழுத்தாளனுக்கு அவனுடைய படைப்புகளுக்கு<br>அடிப்படையாக அமைய வேண்டியது<br>மனித வாழ்வின் பிரச்சினைகளே.</p>
+          <p class="q-en">For a writer, the foundation of his work must be the problems of human life.</p>
+        </blockquote>
+        <figcaption><span class="q-name-ta" lang="ta">ஜெயகாந்தன்</span><span class="q-name-en">Jeyakanthan</span></figcaption>
+      </figure>
+      <figure class="q-slide" aria-hidden="true">
+        <img class="q-portrait" src="images/sundara-ramaswamy.jpg" alt="Sundara Ramaswamy" style="object-position:center 30%">
+        <blockquote>
+          <p class="q-ta" lang="ta">எழுத்து ஒரு சமூகச் செயல்பாடு;<br>லெளகீகச் செயல்பாடு அல்ல.</p>
+          <p class="q-en">Writing is a social act, not a worldly one.</p>
+        </blockquote>
+        <figcaption><span class="q-name-ta" lang="ta">சுந்தர ராமசாமி</span><span class="q-name-en">Sundara Ramaswamy</span></figcaption>
+      </figure>
+      <figure class="q-slide" aria-hidden="true">
+        <img class="q-portrait" src="images/jeyamohan.jpg" alt="Jeyamohan" style="object-position:center 20%">
+        <blockquote>
+          <p class="q-ta" lang="ta">இலக்கியம் காட்டும் உணர்ச்சிகளில்<br>நம்மை நாமே புதியதாக அடையாளம் காண்கிறோம்.</p>
+          <p class="q-en">In the emotions literature reveals, we discover ourselves anew.</p>
+        </blockquote>
+        <figcaption><span class="q-name-ta" lang="ta">ஜெயமோகன்</span><span class="q-name-en">Jeyamohan</span></figcaption>
+      </figure>
     </div>
+    <div class="q-dots"><button class="q-dot is-active" aria-label="Quote 1"></button><button class="q-dot" aria-label="Quote 2"></button><button class="q-dot" aria-label="Quote 3"></button><button class="q-dot" aria-label="Quote 4"></button><button class="q-dot" aria-label="Quote 5"></button></div>
+  </div>
+</section>
+
+    <section>
+      <div class="wrap">
+        <p class="label" lang="ta">இலக்கியக் கூடல்கள்</p>
+        <h2>Literary Gatherings</h2>
+        <ul class="cards">
+          <li><p class="card-ta" lang="ta">நவீன தமிழ் இலக்கியம்</p><h3>Modern Tamil Literature</h3><p>Close readings and book circles on the writers who shaped modern Tamil, from Bharathi and Puthumaipithan to the voices of today.</p></li>
+          <li><p class="card-ta" lang="ta">எழுத்தாளர் சந்திப்பும் பட்டறையும்</p><h3>Writers’ Meets &amp; Workshops</h3><p>Where readers and writers sit together: hands-on sessions in fiction, poetry and the craft of translation.</p></li>
+          <li><p class="card-ta" lang="ta">படைப்பாளிகளுடன் உரையாடல்</p><h3>In Conversation with Authors</h3><p>Evenings with novelists, poets and translators: readings, reflections and open dialogue.</p></li>
+        </ul>
+        <p><a href="programs.html">Explore all gatherings →</a> &nbsp;·&nbsp; <a href="readings.html">Browse everything we have read →</a></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="label">Coming up</p>
+        <h2>Upcoming events</h2>
+        <p class="muted">Our event calendar is coming soon. <a href="events.html">Visit the Events page</a> or <a href="contact.html">contact us</a> to hear about the first programs.</p>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <div class="wrap">© 2026 Tamil Literature Today. Made with love for the written word.</div>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="brand-ta" lang="ta">வாழும் தமிழ் · கலிபோர்னியா</p>
+        <p>Living Tamil California, a California nonprofit public benefit corporation.<br>
+        EIN 43-2843915 · 501(c)(3) status pending with the IRS.</p>
+        <p>An independent organization sharing common goals with <a href="https://livingtamil.org" target="_blank" rel="noopener noreferrer">Living Tamil in India</a>.</p>
+      </div>
+      <div>
+        <p><a href="mailto:livingtamilcalifornia@gmail.com">livingtamilcalifornia@gmail.com</a><br>
+        <a href="tel:+14089106352">(408) 910-6352</a><br>Hayward, California</p>
+        <p><a class="foot-yt" href="https://www.youtube.com/channel/UCCyEoEuhA17D2YzN9v149PA" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.8 15.1V8.9L15.6 12z"/></svg> YouTube · past gatherings</a></p>
+        <p><a href="privacy.html">Privacy Policy</a> · <a href="donation-policy.html">Donation &amp; Refund Policy</a></p>
+      </div>
+    </div>
+    <div class="wrap"><p class="copy">© <span data-year>2026</span> Living Tamil California</p></div>
   </footer>
+  <script src="js/site.js"></script>
 </body>
 </html>
